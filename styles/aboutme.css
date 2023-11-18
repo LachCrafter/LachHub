@@ -36,7 +36,7 @@ body {
     align-items: center;
 }
 
-.home-button, .aboutme-button {
+.home-button, .aboutme-button, .myprojects-button {
     display: inline-block;
     padding: 12px 24px;
     color: #fff;
@@ -50,7 +50,7 @@ body {
     transition: color 0.3s;
 }
 
-.home-button:hover, .aboutme-button:hover {
+.home-button:hover, .aboutme-button:hover, .myprojects-button:hover {
     color: #ccc;
 }
 
