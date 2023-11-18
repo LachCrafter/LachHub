@@ -107,7 +107,7 @@ body {
 }
 
 .discord-frame {
-    margin-top: 20px; /* Add margin to separate from buttons */
+    margin-top: 50px; /* Add margin to separate from buttons */
     width: 400px;
     margin-left: 750px;
     height: 500px;
