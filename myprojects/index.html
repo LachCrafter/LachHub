@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Projects</title>
+    <title>My Projects | LachHub</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/myprojects.css">
@@ -25,12 +25,13 @@
                 <h2>LachAnarchy</h2>
                 <p>A Minecraft anarchy FFA server without rules.</p>
                 <a href="javascript:void(0);" onclick="copyToClipboard('LachCrafter.de')" class="github-button">IP: LachCrafter.de</a>
+                <div id="serverStatus"></div>
             </div>
 
             <div class="project-container">
                 <h2>LachHub</h2>
                 <p>My main website made with HTML, CSS and JavaScript.</p>
-                <a href="https://github.com/example3" target="_blank" class="github-button">Visit on Github</a>
+                <a href="https://github.com/LachCrafter/LachHub" target="_blank" class="github-button">Visit on Github</a>
             </div>
         </div>
     </div>
@@ -45,6 +46,27 @@
             document.body.removeChild(textarea);
             alert('IP copied to clipboard!');
         }
+
+        async function checkServerStatus() {
+            const statusElement = document.getElementById('serverStatus');
+            
+            try {
+                const response = await fetch('https://api.mcsrvstat.us/2/LachCrafter.de:25565');
+                const data = await response.json();
+
+                if (data.online) {
+                    statusElement.innerHTML = '<div style="color: green;">Server is online!</div>';
+                } else {
+                    statusElement.innerHTML = '<div style="color: red;">Server is offline.</div>';
+                }
+            } catch (error) {
+                console.error('Error checking server status:', error);
+                statusElement.innerHTML = '<div style="color: red;">Error checking server status.</div>';
+            }
+        }
+
+        // Check server status on page load
+        checkServerStatus();
     </script>
 </body>
 </html>
