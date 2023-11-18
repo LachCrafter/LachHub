@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/myprojects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Poppins:wght@200;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>My Projects</h1>
+            <p>Explore my projects below.</p>
+
+            <div class="project-container">
+                <h2>LachShield</h2>
+                <p>A Minecraft plugin that improves server security.</p>
+                <a href="https://github.com/LachCrafter/LachShield" target="_blank" class="github-button">Visit on Github</a>
+            </div>
+
+            <div class="project-container">
+                <h2>LachAnarchy</h2>
+                <p>A Minecraft anarchy FFA server without rules.</p>
+                <a href="javascript:void(0);" onclick="copyToClipboard('LachCrafter.de')" class="github-button">IP: LachCrafter.de</a>
+            </div>
+
+            <div class="project-container">
+                <h2>LachHub</h2>
+                <p>My main website made with HTML, CSS and JavaScript.</p>
+                <a href="https://github.com/example3" target="_blank" class="github-button">Visit on Github</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(ip) {
+            const textarea = document.createElement('textarea');
+            textarea.value = ip;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('IP copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
