@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to left, #000000, #8e44ad);
     color: #fff;
     animation: gradientAnimation 3s linear infinite alternate;
-    background-size: 100% 200%; /* Added background-size property */
+    background-size: 100% 200%;
 }
 
 @keyframes gradientAnimation {
@@ -14,13 +14,6 @@ body {
     100% {
         background-position: 0% 100%;
     }
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; 
 }
 
 .welcome-text {
@@ -43,7 +36,8 @@ canvas {
 }
 
 .discord-button,
-.github-button {
+.github-button,
+.myprojects-button {
     display: inline-block;
     padding: 12px 24px;
     color: #fff;
@@ -61,7 +55,8 @@ canvas {
 }
 
 .discord-button:hover,
-.github-button:hover {
+.github-button:hover,
+.myprojects-button:hover {
     background-color: #555;
 }
 
@@ -69,15 +64,21 @@ canvas {
     background-color: #24292e;
 }
 
+.myprojects-button {
+    background-color: #8e44ad;
+}
+
 .buttons {
     position: fixed;
     top: 20px;
-    left: 20px; 
+    left: 20px;
     display: flex;
     align-items: center;
 }
 
-.home-button, .aboutme-button, .myprojects-button {
+.home-button,
+.aboutme-button,
+.myprojects-button {
     display: inline-block;
     padding: 12px 24px;
     color: #fff;
@@ -91,6 +92,28 @@ canvas {
     transition: color 0.3s;
 }
 
-.home-button:hover, .aboutme-button:hover, .myprojects-button:hover {
+.home-button:hover,
+.aboutme-button:hover,
+.myprojects-button:hover {
     color: #ccc;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.discord-frame {
+    margin-top: 20px; /* Add margin to separate from buttons */
+    width: 400px;
+    margin-left: 750px;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: inline-block;
 }
