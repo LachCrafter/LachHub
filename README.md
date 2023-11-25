@@ -1,2 +1,2 @@
 # LachHub
-My website (lachcrafter.de)
+My website (https://lachcrafter.de)
