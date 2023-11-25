@@ -27,10 +27,16 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 6em;
-    margin: 0;
-    color: #dc3545;
+.title-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    background: linear-gradient(to left, #7289DA, #24292e); /* Reversed gradient colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 p {
@@ -42,21 +48,22 @@ p {
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
-    width: 200px;
+    width: 300px;
     display: inline-block;
+    text-align: left;
 }
 
 .project-container h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .github-button {
     display: block;
-    margin-top: 10px;
-    padding: 8px 15px;
+    margin-top: 15px;
+    padding: 10px 15px;
     background: linear-gradient(to right, #007bff, #0056b3);
     color: #fff;
     text-decoration: none;
@@ -71,12 +78,12 @@ p {
 .buttons {
     position: fixed;
     top: 20px;
-    left: 20px; 
+    left: 20px;
     display: flex;
     align-items: center;
 }
 
-.home-button, .aboutme-button, .myprojects-button {
+.home-button, .myprojects-button {
     display: inline-block;
     padding: 12px 24px;
     color: #fff;
@@ -90,6 +97,6 @@ p {
     transition: color 0.3s;
 }
 
-.home-button:hover, .aboutme-button:hover, .myprojects-button:hover {
+.home-button:hover, .myprojects-button:hover {
     color: #ccc;
 }
