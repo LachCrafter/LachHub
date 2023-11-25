@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to left, #000000, #8e44ad);
     color: #fff;
     animation: gradientAnimation 3s linear infinite alternate;
-    background-size: 100% 200%; /* Added background-size property */
+    background-size: 100% 200%;
 }
 
 @keyframes gradientAnimation {
@@ -16,11 +16,14 @@ body {
     }
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; 
+.container {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
 }
 
 .welcome-text {
@@ -28,11 +31,51 @@ canvas {
     font-weight: bold;
     text-align: center;
     font-size: 36px;
-    margin: 30px 0;
-    background: linear-gradient(to right, #7289DA, #24292e);
+    margin: 20px 0;
+    background: linear-gradient(to left, #7289DA, #24292e); /* Reversed gradient colors */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.about-me {
+    max-width: 600px;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    margin: 10px;
+}
+
+.category h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category li {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .button-container {
@@ -72,12 +115,13 @@ canvas {
 .buttons {
     position: fixed;
     top: 20px;
-    left: 20px; 
+    left: 20px;
     display: flex;
     align-items: center;
 }
 
-.home-button, .aboutme-button, .myprojects-button {
+.home-button,
+.myprojects-button {
     display: inline-block;
     padding: 12px 24px;
     color: #fff;
@@ -91,6 +135,21 @@ canvas {
     transition: color 0.3s;
 }
 
-.home-button:hover, .aboutme-button:hover, .myprojects-button:hover {
+.home-button:hover,
+.myprojects-button:hover {
     color: #ccc;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #333;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 14px;
 }
