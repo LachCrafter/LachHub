@@ -30,92 +30,70 @@ body {
     justify-content: flex-start;
 }
 
-.welcome-text {
+h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 36px;
     margin: 20px 0;
-    color: #fff; /* Farbe ohne Gradienten */
+    background: linear-gradient(to left, #7289DA, #a6d3ff); /* Reversed gradient colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-.about-me {
-    max-width: 600px;
-    margin: 20px 0;
-    color: #ccc;
+p {
+    font-size: 1.5em;
+    margin-top: 0.2em;
 }
 
-.categories {
+.contact-info {
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.category {
-    flex: 1;
-    max-width: 300px;
-    padding: 20px;
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px; /* Breitere Box */
     margin: 10px;
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
-.category:hover {
+.contact-box:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.category h3 {
+.contact-box h3 {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.category ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.category li {
+.contact-box p {
     color: #ccc;
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.discord-button,
-.github-button {
-    display: inline-block;
-    padding: 12px 24px;
+a {
     color: #fff;
-    border: none;
-    border-radius: 25px;
-    text-align: center;
     text-decoration: none;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 
-.discord-button {
-    background-color: #7289DA;
+a:hover {
+    color: #ccc;
 }
 
-.discord-button:hover,
-.github-button:hover {
-    background-color: #555;
-}
-
-.github-button {
-    background-color: #24292e;
+.footer-text {
+    color: #fff;
+    font-size: 14px;
 }
 
 .buttons {
@@ -153,9 +131,4 @@ footer {
     text-align: center;
     padding: 1px;
     background: #333;
-}
-
-.footer-text {
-    color: #fff;
-    font-size: 14px;
 }
