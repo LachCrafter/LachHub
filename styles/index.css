@@ -159,3 +159,14 @@ footer {
     color: #fff;
     font-size: 14px;
 }
+
+.gamelinks {
+    color: #ccc;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.gamelinks:hover {
+    text-decoration: underline;
+    
+}
