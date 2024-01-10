@@ -23,7 +23,7 @@ body {
     .buttons {
         flex-direction: column;
         align-items: center;
-        position: static; /* Remove fixed positioning */
+        position: static;
     }
 
     .home-button,
@@ -60,7 +60,7 @@ body {
     text-align: center;
     font-size: 36px;
     margin: 20px 0;
-    color: #fff; /* Farbe ohne Gradienten */
+    color: #fff;
 }
 
 .about-me {

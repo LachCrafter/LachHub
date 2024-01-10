@@ -36,7 +36,7 @@ h1 {
     text-align: center;
     font-size: 36px;
     margin: 20px 0;
-    background: linear-gradient(to left, #7289DA, #a6d3ff); /* Reversed gradient colors */
+    background: linear-gradient(to left, #7289DA, #a6d3ff); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -59,7 +59,7 @@ p {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     padding: 20px;
-    width: 300px; /* Breitere Box */
+    width: 300px; 
     margin: 10px;
     text-align: center;
     transition: background-color 0.3s ease;

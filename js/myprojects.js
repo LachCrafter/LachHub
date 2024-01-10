@@ -1,5 +1,4 @@
 window.onload = function() {
-    // Your existing JavaScript code
     function filterProjects() {
         const searchInput = document.getElementById('projectSearch');
         const filter = searchInput.value.toLowerCase();
@@ -16,13 +15,9 @@ window.onload = function() {
             }
         });
     }
-
-    // Attach the filterProjects function to the input's 'input' event
     const searchInput = document.getElementById('projectSearch');
     if (searchInput) {
         searchInput.addEventListener('input', filterProjects);
     }
-
-    // Check server status on page load
     checkServerStatus();
 };
