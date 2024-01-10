@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0%;
     height: 100%;
-    background: linear-gradient(to left, #000000, #8e44ad);
+    background: linear-gradient(to left, #1164d1, #f70000);
     color: #fff;
     animation: gradientAnimation 3s linear infinite alternate;
     background-size: 100% 200%;
@@ -13,11 +13,35 @@ body {
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
-    }
+    }s
     100% {
         background-position: 0% 100%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        position: static; /* Remove fixed positioning */
+    }
+
+    .home-button,
+    .myprojects-button,
+    .contactme-button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .home-button:hover,
+    .myprojects-button:hover,
+    .contactme-button:hover {
+        color: #ccc;
+    }
+}
+
 
 .container {
     text-align: center;
@@ -168,5 +192,20 @@ footer {
 
 .gamelinks:hover {
     text-decoration: underline;
-    
+
+}
+
+.snowflake {
+    position: absolute;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh - 10px);
+    }
 }

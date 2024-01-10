@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background: linear-gradient(to left, #000000, #8e44ad);
@@ -53,6 +53,17 @@ p {
     width: 300px;
     display: inline-block;
     text-align: left;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.project-container.filtered {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .project-container h2 {
@@ -99,4 +110,21 @@ p {
 
 .home-button:hover, .myprojects-button:hover {
     color: #ccc;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+#projectSearch {
+    width: 100%;
+    background-color: #000000af;
+    font-size: 16px;
+    font-family: poppins;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
