@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to left, #000000, #8e44ad);
     color: #fff;
     animation: gradientAnimation 3s linear infinite alternate;
-    background-size: 100% 200%; /* Added background-size property */
+    background-size: 100% 200%;
 }
 
 @keyframes gradientAnimation {
@@ -47,7 +47,7 @@ a {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: all 0.3s; /* Updated transition property */
+    transition: all 0.3s;
 }
 
 a:hover {
