@@ -1,0 +1,7 @@
+# Enable mod_rewrite
+RewriteEngine On
+RewriteBase /
+
+# Remove .html extension from the contactme page
+RewriteRule ^contactme$ /contactme.html [L]
+RewriteRule ^myprojects$ /myprojects.html [L]
