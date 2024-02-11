@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(to right, #5e42a6, #b74f9f); /* Updated purple gradient */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #0000003f;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.container {
+    text-align: center;
+    width: 80%; /* Limit max width for better readability */
+}
+
+.welcomer, .description {
+    color: rgba(255, 255, 255, 0.945);
+}
+
+.welcomer {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+}
+
+.section {
+    margin: 20px;
+}
+
+.section-box {
+    background-color: rgba(0, 0, 0, 0.267); /* Light background for contrast */
+    color: #ffffffc7; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjust based on content */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.section-box h2 {
+    color: #875fec; /* Purple to tie into theme */
+}
+
+ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+    }
+    .navbar a {
+        margin: 0 10px; /* Adjust spacing for smaller screens */
+    }
+}
+
+.project-item {
+    background-color: rgba(171, 60, 245, 0.178); /* Semi-transparent white for contrast */
+    color: #cfcfcfcc; /* Dark text for readability */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px; /* Inner padding for text */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhance depth */
+    transition: transform 0.2s, background-color 0.2s; /* Corrected: Animate transform and background-color */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Slight raise effect on hover */
+    background-color: rgba(0, 0, 0, 0.137); /* Slightly increase opacity on hover for effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit; /* Prevents color changes on link */
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #875fec; /* Purple to keep theme consistent */
+}
+
+.project-info p {
+    margin: 5px 0 0; /* Adjust spacing for readability */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .section-box {
+        padding: 20px;
+    }
+    .project-item {
+        padding: 20px; /* Provide more space on smaller screens */
+    }
+}
